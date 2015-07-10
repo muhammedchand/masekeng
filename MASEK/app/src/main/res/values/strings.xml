@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SAyle</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="button_send">Send</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="action_search">SEARCH</string>
+    <string name="hello_world">Helloo world!</string>
+    <string name="Shop_name1">African Threads</string>
+    <string name="title_activity_purchase_item">Style selection</string>
+    <string name="purchase_button">Add to cart</string>
+    <string name="home_button">HOME</string>
+    <string name="checkout_button">CHECKOUT</string>
+    <string name="profile_button">PROFILE</string>
+    <string name="title_activity_checkout_items">Item checkout</string>
+    <string name="title_activity_load_profile">Profile</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="edit_message">Enter message</string>
+    <!-- User Profile Information-->
+    <string name="user_account">User Account Name</string>
+    <string name="user_name">User Name</string>
+    <string name="user_date_of_birth">Date of Birth</string>
+
+    <string name="history">History</string>
+    <string name="test">TEst Content</string>
+    <string name="store_name">Store Name</string>
+
+    <string name="payment">Your Payment Options</string>
+
+    <!--List of Linked Accounts -->
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="tumblr">Tumblr</string>
+
+    <string name="delivery">Your Delivery Address</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_linked_accounts">Linked Accounts</string>
+    <string name="title_activity_delivery">Delivery</string>
+    <string name="total">Total: R2500</string>
+    <string name="share_button">Share</string>
+    <string name="final_purchase_button">Purchase cart</string>
+    <string name="item1">Beige cocktail dress - R1000 </string>
+    <string name="item2">Pink cocktail dress - R1500 </string>
+
+</resources>

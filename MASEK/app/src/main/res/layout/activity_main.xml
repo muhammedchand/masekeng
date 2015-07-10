@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/imageView"
+            android:src="@mipmap/profile"
+            android:contentDescription="@string/test"
+
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/text"
+                android:text="@string/Shop_name1"/>
+
+            <ImageView
+                android:onClick="purchase"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/imageView1"
+                android:src="@mipmap/beige_dressweb"
+                android:contentDescription="@string/test"
+                 />
+            </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/imageView2"
+                android:src="@mipmap/profile"
+                android:contentDescription="@string/test"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/text1"
+                    android:text="@string/Shop_name1"/>
+
+                <ImageView
+                    android:onClick="purchase"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/imageView3"
+                    android:src="@mipmap/blure_dressweb"
+                    android:contentDescription="@string/test"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/imageView6"
+                android:src="@mipmap/profile"
+                android:contentDescription="@string/test"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/text2"
+                    android:text="@string/Shop_name1"/>
+
+                <ImageView
+                    android:onClick="purchase"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/imageView4"
+                    android:src="@mipmap/green_dressweb"
+                    android:contentDescription="@string/test"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home_button"
+            android:layout_gravity="left"
+            android:background="#4405DD"
+            android:onClick="home"/>
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/checkout_button"
+            android:layout_gravity="center"
+            android:background="#4455DD"
+            android:onClick="checkout"/>
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/profile_button"
+            android:layout_gravity="right"
+            android:background="#4455DD"
+            android:onClick="profile"/>
+
+    </LinearLayout>
+
+</LinearLayout>
