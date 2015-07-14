@@ -26,7 +26,6 @@
                 android:id="@+id/imageView"
                 android:src="@mipmap/profile"
                 android:contentDescription="@string/test"
-                android:onClick="purchase"
                 />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -63,7 +62,6 @@
             android:id="@+id/imageView2"
             android:src="@mipmap/profile"
             android:contentDescription="@string/test"
-            android:onClick="purchase"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -91,6 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="32dp"
+            android:id="@+id/total"
             android:layout_gravity="center"
             android:text="@string/total"/>
         <LinearLayout
@@ -100,15 +99,18 @@
             <Button
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/purchase_cart"
                 android:text="@string/final_purchase_button"
                 android:layout_weight="1"
                 android:background="#44C5DD"/>
             <Button
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/share_button"
                 android:text="@string/share_button"
                 android:layout_weight="1"
-                android:background="#44F5DD"/>
+                android:background="#44F5DD"
+                android:onClick="share"/>
 
         </LinearLayout>
 </LinearLayout>
@@ -136,6 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/checkout_button"
+            android:id="@+id/checkout_button"
             android:layout_gravity="center"
             android:background="#4405DD"
             android:onClick="checkout"/>

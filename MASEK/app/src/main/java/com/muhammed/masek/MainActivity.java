@@ -6,15 +6,33 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import org.w3c.dom.Node;
 
 
 public class MainActivity extends ActionBarActivity {
     public final static String EXTRA_MESSAGE = "com.muhammed.masek.MESSAGE";
+    public final static String TOTAL = "com.muhammed.masek.TOTAL";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
+
+        Button btnAlpha = (Button)findViewById(R.id.home_button);
+        btnAlpha.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                arg0.startAnimation(animAlpha);
+            }
+        });
+
     }
 
     @Override
@@ -55,12 +73,16 @@ public class MainActivity extends ActionBarActivity {
     public void purchase(View view) {
         // Do something in response to button
         Intent intent = new Intent(this, PurchaseItem.class);
+        //final TextView textViewToChange = (TextView) findViewById(R.id.text);//how to change actual content
+        //textViewToChange.setText("Purchased");
         startActivity(intent); //Should start the purchaseItemclass
     }
 
     public void checkout(View view) {
         // Do something in response to button
         Intent intent = new Intent(this, CheckoutItems.class);
+        //String countermsg = "0";
+        //intent.putExtra(TOTAL, countermsg);
         startActivity(intent); //Should start the purchaseItemclass
     }
 

@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 
 
 public class PurchaseItem extends ActionBarActivity {
@@ -15,6 +18,31 @@ public class PurchaseItem extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_item);
+
+        final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
+
+        Button btnAlpha = (Button)findViewById(R.id.add);
+        Button btnAlpha1 = (Button)findViewById(R.id.add1);
+        Button btnAlpha2 = (Button)findViewById(R.id.add2);
+
+        btnAlpha.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                arg0.startAnimation(animAlpha);
+            }
+        });
+        btnAlpha1.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                arg0.startAnimation(animAlpha);
+            }
+        });
+        btnAlpha2.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                arg0.startAnimation(animAlpha);
+            }
+        });
     }
 
    /* @Override
@@ -42,8 +70,8 @@ public class PurchaseItem extends ActionBarActivity {
     public void checkout(View view) {
         // Do something in response to button
         Intent intent = new Intent(this, CheckoutItems.class);
-        String countermsg = String.valueOf(counter);
-        intent.putExtra(TOTAL, countermsg);
+       // String countermsg = String.valueOf(counter);
+       // intent.putExtra(TOTAL, countermsg);
         startActivity(intent); //Should start the purchaseItemclass
     }
 
@@ -60,7 +88,7 @@ public class PurchaseItem extends ActionBarActivity {
     }
 
     public void addToCart(View view){
-        sampleDB =  this.openOrCreateDatabase(SAMPLE_DB_NAME, MODE_PRIVATE, null);
+
         counter = counter + 1000;
     }
 

@@ -34,10 +34,16 @@
                     android:contentDescription="@string/test"
                     />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/purchase_button"
+                    android:id="@+id/add"
                     android:layout_gravity="center"
                     android:background="#4455DD"
                     android:onClick="addToCart"/>
@@ -58,10 +64,16 @@
                     android:contentDescription="@string/test"
                     />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/purchase_button"
+                    android:id="@+id/add1"
                     android:layout_gravity="center"
                     android:background="#4455DD"
                     android:onClick="addToCart"/>
@@ -81,10 +93,16 @@
                     android:contentDescription="@string/test"
                     />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/purchase_button"
+                    android:id="@+id/add2"
                     android:layout_gravity="center"
                     android:background="#4455DD"
                     android:onClick="addToCart"/>

@@ -1,12 +1,15 @@
 package com.muhammed.masek;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class History extends ActionBarActivity {
+    public final static String TOTAL = "com.muhammed.masek.TOTAL";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,4 +38,25 @@ public class History extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void checkout(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, CheckoutItems.class);
+        String countermsg = "0";
+        intent.putExtra(TOTAL, countermsg);
+        startActivity(intent); //Should start the purchaseItemclass
+    }
+
+    public void profile(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, LoadProfile.class);
+        startActivity(intent); //Should start the purchaseItemclass
+    }
+
+    public void home(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent); //Should start the purchaseItemclass
+    }
+
 }

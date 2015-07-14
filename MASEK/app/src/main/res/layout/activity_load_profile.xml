@@ -93,7 +93,7 @@
             android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
+            android:id="@+id/profile_button"
             android:text="@string/profile_button"
             android:layout_gravity="right"
             android:background="#4405DD"

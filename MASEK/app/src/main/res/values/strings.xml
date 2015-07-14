@@ -9,6 +9,9 @@
     <string name="action_search">SEARCH</string>
     <string name="hello_world">Helloo world!</string>
     <string name="Shop_name1">African Threads</string>
+    <string name="Shop_name2">SA Pride - Advertisement</string>
+    <string name="Shop_name3">Made in SA</string>
+
     <string name="title_activity_purchase_item">Style selection</string>
     <string name="purchase_button">Add to cart</string>
     <string name="home_button">HOME</string>
@@ -45,5 +48,5 @@
     <string name="final_purchase_button">Purchase cart</string>
     <string name="item1">Beige cocktail dress - R1000 </string>
     <string name="item2">Pink cocktail dress - R1500 </string>
-
+    <string name="description">This dress was made by Tahera Ameer Designs and comes from the Maboneng District</string>
 </resources>
